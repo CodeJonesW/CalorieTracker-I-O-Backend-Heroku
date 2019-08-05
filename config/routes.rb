@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   post '/signup' => 'users#create'
   get '/profile' => 'users#show'
   get '/current_user' => 'auth#show'
+  root 'welcome#index'
 end
