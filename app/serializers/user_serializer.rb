@@ -67,7 +67,6 @@ class UserSerializer < ActiveModel::Serializer
       activity_miles_this_week: self.object.activity_miles_this_week,
       activity_miles_per_day_this_week: self.object.activity_miles_per_day_this_week,
       activity_miles_this_month: self.object.activity_miles_this_month,
-      activity_miles_this_year: self.object.activity_miles_this_year,
       find_number_of_days_in_current_month: self.object.find_number_of_days_in_current_month,
       find_number_of_days_left_in_current_month: self.object.find_number_of_days_left_in_current_month,
       bmr_at_sedentary_activity_lvl: self.object.bmr_at_sedentary_activity_lvl,
