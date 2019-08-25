@@ -15,13 +15,6 @@ class AuthController < ApplicationController
     end
 
     def show 
-      # debugger
-      # string = request.authorization
-      # token = JWT.decode(string, 'stay_fit')[0]
-      # id = token["id"].to_i
-      # @user = User.find(id)
-      # debugger
-
       if @user
           user = UserSerializer.new(@user)
           render json: {user: user}
